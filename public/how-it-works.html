@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Umber Quay works</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      body { margin: 0; }
+      header, main, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header { display: flex; justify-content: space-between; align-items: center; }
+      .mark { font-weight: 700; color: #2f7d4f; text-decoration: none; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      header a.back { font-size: 10px; color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        background: linear-gradient(90deg, #2f7d4f, #c2410c);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background. */
+      .edge { margin: 0; padding: 0; line-height: 1.5; }
+      /* Intentional, for Impeccable's test drive: low-contrast light grey text. */
+      .note { color: #c8c8c4; }
+      ul.steps { padding-left: 1.2rem; line-height: 1.8; }
+      /* Intentional, for Impeccable's test drive: transition on a layout property. */
+      .bar { height: 0.5rem; width: 40%; background: #2f7d4f; border-radius: 0.25rem; transition: width 0.3s; }
+      .bar:hover { width: 100%; }
+      /* Intentional, for Impeccable's test drive: hard-coded colour outside the palette. */
+      .tag { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 0.25rem; background: #7c3aed; color: #fff; font-size: 0.85rem; }
+      footer { color: #555; font-size: 0.9rem; border-top: 1px solid #e5e5e0; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="mark" href="/">Umber Quay</a>
+      <a class="back" href="/">Back to the landing page</a>
+    </header>
+    <main>
+      <h1>How Umber Quay works</h1>
+      <p class="edge">Umber Quay keeps one shared list for your whole team. Anyone can add an item, tick it off, and see the change on the landing page within seconds.</p>
+      <h2>Three steps <span class="tag">Simple</span></h2>
+      <ul class="steps">
+        <li>Add an item to the shared list.</li>
+        <li>Tick it off once it is done.</li>
+        <li>Watch the live list on the landing page update.</li>
+      </ul>
+      <p class="note">The list shows the five most recent items, newest first.</p>
+      <div class="bar" role="img" aria-label="Most items are ticked off within a day"></div>
+    </main>
+    <footer>Umber Quay · one shared list for your team</footer>
+  </body>
+</html>
